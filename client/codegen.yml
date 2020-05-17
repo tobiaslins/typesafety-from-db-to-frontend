@@ -1,0 +1,19 @@
+overwrite: true
+schema: http://localhost:4321/graphql
+documents: "graphql/queries/**/*.graphql"
+generates:
+  graphql/queries/_generated.tsx:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-urql"
+    config:
+      withHooks: true
+      withComponent: false
+      withHOC: false
+      scalars:
+        DateTime: Date
+        Upload: File
+#   src/queries/_schema.graphql:
+#     plugins:
+#       - schema-ast

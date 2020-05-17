@@ -1,0 +1,28 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 4444 & yarn codegen",
+    "build": "next build",
+    "start": "next start",
+    "codegen": "graphql-codegen --config codegen.yml --watch"
+  },
+  "dependencies": {
+    "graphql": "^15.0.0",
+    "next": "9.4.1",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "tailwindcss": "^1.4.6",
+    "urql": "^1.9.7"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^1.13.5",
+    "@graphql-codegen/typescript": "^1.13.5",
+    "@graphql-codegen/typescript-operations": "^1.13.5",
+    "@graphql-codegen/typescript-urql": "^1.13.5",
+    "@types/node": "^14.0.1",
+    "@types/react": "^16.9.35",
+    "typescript": "^3.9.2"
+  }
+}
