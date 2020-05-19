@@ -4,7 +4,9 @@ import { Recipe } from "../entity/recipe";
 @Resolver()
 export class RecipeResolver {
   @Query((returns) => [Recipe], { nullable: true })
-  async recipes(): Promise<Array<Recipe> | undefined> {
-    return await Recipe.find();
+  async recipes(): Promise<Array<Partial<Recipe>> | undefined> {
+    const recipes = await Recipe.find();
+
+    return recipes;
   }
 }

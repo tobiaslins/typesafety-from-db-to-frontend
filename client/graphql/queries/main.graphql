@@ -1,5 +1,7 @@
 query getRecipes {
   recipes {
+    id
     title
+    #	averageRating
   }
 }

@@ -1,0 +1,14 @@
+{
+  "name": "typesafety-from-db-to-frontend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/tobiaslins/typesafety-from-db-to-frontend.git",
+  "author": "Tobias Lins <me@tobi.sh>",
+  "license": "MIT",
+  "devDependencies": {
+    "mdx-deck": "^4.1.1"
+  },
+  "scripts": {
+    "start": "mdx-deck deck.mdx"
+  }
+}

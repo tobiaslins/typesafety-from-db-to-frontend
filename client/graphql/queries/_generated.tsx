@@ -21,7 +21,6 @@ export type Recipe = {
    __typename?: 'Recipe';
   id: Scalars['Float'];
   title: Scalars['String'];
-  avgRating?: Maybe<Scalars['Float']>;
 };
 
 export type GetRecipesQueryVariables = {};
@@ -31,7 +30,7 @@ export type GetRecipesQuery = (
   { __typename?: 'Query' }
   & { recipes?: Maybe<Array<(
     { __typename?: 'Recipe' }
-    & Pick<Recipe, 'title'>
+    & Pick<Recipe, 'id' | 'title'>
   )>> }
 );
 
@@ -39,6 +38,7 @@ export type GetRecipesQuery = (
 export const GetRecipesDocument = gql`
     query getRecipes {
   recipes {
+    id
     title
   }
 }

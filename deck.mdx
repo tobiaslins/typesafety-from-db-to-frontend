@@ -1,0 +1,101 @@
+import { future, highlight } from '@mdx-deck/themes'
+
+export const theme = {
+  ...future,
+  ...highlight
+}
+
+
+<Footer>
+
+@linstobias
+
+</Footer>
+
+# Tobias Lins
+- Freelance Consultant - React & NodeJS
+- Building splitbee.io 
+
+---
+
+## Type safety between Database and Frontend
+
+---
+
+# Where are types needed?
+
+<Steps>
+
+### Relational Database 
+### Typescript server-side
+### GraphQL Schema
+### Typescript client
+
+</Steps>
+
+---
+
+# Possible Solution
+
+* typeorm
+* typegraphql
+* graphql-code-generator
+
+---
+
+# typeorm
+
+```ts
+@Entity()
+export class User {
+    @PrimaryGeneratedColumn()
+    id: number;
+
+    @Column()
+    firstName: string;
+}
+```
+
+typeorm.io
+
+
+---
+
+# TypeGraphQL
+
+```ts
+@ObjectType()
+export class User {
+    @Field()
+    id: number;
+
+    @Field()
+    firstName: string;
+}
+```
+
+typegraphql.com
+
+---
+
+# graphql-code-generator
+
+---
+
+# Live Coding Example
+
+---
+
+
+# Summary
+
+<Steps>
+
+* Define type on server
+* Typescript class as backend typing
+* Generated type on client
+* Type safe access
+
+</Steps>
+
+--- 
