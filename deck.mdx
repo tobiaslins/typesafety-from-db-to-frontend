@@ -22,7 +22,7 @@ export const theme = {
 
 ---
 
-# Where are types needed?
+# Where do you need types?
 
 <Steps>
 
@@ -79,6 +79,16 @@ typegraphql.com
 ---
 
 # graphql-code-generator
+
+```
+schema: http://localhost:3000/graphql
+generates:
+  ./src/types.d.ts:
+    plugins:
+      - typescript
+```
+
+graphql-code-generator.com
 
 ---
 
