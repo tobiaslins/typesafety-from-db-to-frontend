@@ -11,7 +11,7 @@
     "pg": "^8.2.1",
     "reflect-metadata": "^0.1.13",
     "type-graphql": "^1.0.0-rc.1",
-    "typeorm": "^0.2.24"
+    "typeorm": "^0.2.25"
   },
   "devDependencies": {
     "ts-node-dev": "^1.0.0-pre.44",
